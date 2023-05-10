@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">pr_4_UI_Widgets</string>
+    <string-array name="cities_array">
+        <item>Aurangabad</item>
+        <item>Pune</item>
+        <item>Nagpur</item>
+        <item>Mumbai</item>
+        <item>Hyderabad</item>
+    </string-array>
+</resources>

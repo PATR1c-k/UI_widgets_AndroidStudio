@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@drawable/widget" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="41dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_toStartOf="@+id/editTextName"
+        android:text="Name:" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Simple EditText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="157dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Gender:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="248dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="144dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textCanSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup1"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="12dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Can Speak:" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_toRightOf="@+id/textCanSpeak"
+        android:text="English" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMarathi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxEnglish"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_toRightOf="@+id/textCanSpeak"
+        android:text="Marathi" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHindi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxMarathi"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/textCanSpeak"
+        android:text="Hindi" />
+
+    <TextView
+        android:id="@+id/textHostel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxHindi"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="19dp"
+        android:text="Do You Need Hostel:"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxHindi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/textHostel"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHostel"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="43dp"
+        android:text="Age:"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggleButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toRightOf="@id/textAge" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="33dp"
+        android:text="Your Rating:"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textDate"
+        android:layout_below="@id/seekBar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="28dp"
+        android:text="City:"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/Citylist"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/textCity"
+        android:background="@drawable/rounded_button"
+        android:divider="#f00"
+        android:dividerHeight="1dp"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@android:style/Widget.Button"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/textCity"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/textCity"
+        android:background="@drawable/rounded_button"
+        android:text="Submit"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
